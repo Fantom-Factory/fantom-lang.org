@@ -32,4 +32,4 @@ afGoogleAnalytics.accountNumber 	= UA-33997125-7
 
 # ---- Production Values --------------------------------------------------------------------------
 
-prod.afBedSheet.host				= http://fantom-lang.org/
+prod.afBedSheet.host				= https://fantom-lang.org/
