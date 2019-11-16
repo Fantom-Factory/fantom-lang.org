@@ -1,0 +1,8 @@
+
+Artist
+https://www.fiverr.com/ajordaz
+
+Nodejs-based tool for optimizing SVG vector graphics files.
+https://github.com/svg/svgo
+
+svgo -p 0 --pretty ghost2.orig.svg ghost2.min.svg

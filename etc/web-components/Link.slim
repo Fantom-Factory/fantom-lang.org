@@ -1,0 +1,11 @@
+
+p.indent.link
+	-- if (href != null)
+		a.lead (href="${href}") ${title}
+	-- else
+		span.lead ${title}
+	-- if (desc != null)
+		|  - ${desc}
+	-- if (credit != null)
+		small.text-muted.credit ${credit}
+		

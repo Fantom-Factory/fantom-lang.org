@@ -1,0 +1,2 @@
+
+const mixin Fanny : FangComponent { } 

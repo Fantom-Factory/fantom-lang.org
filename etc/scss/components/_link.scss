@@ -1,0 +1,14 @@
+
+.link {
+	.lead {
+		font-family	: $brand-font;
+	}
+	.credit {
+		display		: block;
+		margin-top	: -0.25rem;
+	}
+}
+
+ul p.link {
+	margin-bottom	: 0;
+}

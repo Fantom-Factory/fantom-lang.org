@@ -1,0 +1,68 @@
+
+#indexPage {
+	h1 {	
+		margin				: auto;
+		width				: 36rem;
+		text-align			: center;
+
+		.title {
+			letter-spacing	: 1rem;
+			font-family		: $brand-font;
+			font-size		: 3.5rem;
+			
+			.noTrailingSpace {
+				letter-spacing	: 0;
+			}
+		}
+
+		.small {
+			border-top		: 2px solid $gray-800;
+			font-family		: $font-family-sans-serif;
+		}
+	}
+
+
+	h1 {
+		font-size			: 2rem;
+	}
+	.highlights {
+		line-height			: 1.5;
+		font-size			: 1.4rem;
+	}
+
+	@include media-breakpoint-up(md) {
+		h1 {
+			font-size		: 2.5rem;
+		}
+		.highlights {
+			font-size		: 1.5rem;
+		}
+	}
+	
+	#fanny {
+		width				: 9.375rem;	// 150px;
+		height				: 2.5rem;	// 200px;
+		margin-left			: 2rem;
+	}
+	#fannySvg-ghost {
+		width				: 150px;
+		height				: 155px;
+	}
+	
+	@include media-breakpoint-up(md) {
+		#fanny {
+			width			: 200px;
+			height			: 260px;
+			margin-top		: -1rem;
+			margin-left		: 4rem;
+		}
+		#fannySvg-ghost {
+			width			: 193px;
+			height			: 200px;
+		}
+	}
+	
+	.youTubeVids iframe {
+		display				: inline-block;
+	}
+}

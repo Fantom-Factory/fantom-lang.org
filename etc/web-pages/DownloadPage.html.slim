@@ -1,0 +1,88 @@
+== app.renderLayout("Download")
+
+	h1	Download
+
+	p	Download the latest official distribution of Fantom here:
+	
+	== app.renderLinkBy("fantom-1.0.73.zip", "https://bitbucket.org/fantom/fan-1.0/downloads/fantom-1.0.73.zip", "Brian & Andy Frank", "(16.1 MB)")
+
+	p	The download contains binaries to compile, run, and test Fantom programs on all platforms. See 
+		a (href="http://fantom.org/doc/docTools/Setup") Setup
+		|  for help on installation.
+
+	p	Fantom requires Java JRE v1.7 (or greater) installed on your system. 
+
+	p	If using SWT / GFX on 64 bit systems then see the article 
+		a (href="http://www.alienfactory.co.uk/articles/fwt-on-64-bit-platforms") FWT on 64-Bit Platforms
+		| .
+
+
+
+	h2 Installers &amp; Package Managers
+	
+	p	Installers &amp; package managers are created and maintained by individuals and other 3rd parties.
+
+
+
+	h3	Windows
+	
+	p	A custom Fantom installer for Windows is available here:
+
+	== app.renderLinkBy("fantom-1.0.73.exe", "https://bitbucket.org/fantomfactory/fantom-windows-installer/downloads/fantom-1.0.73.exe", "me", "(13.0 MB)")
+
+	p	The 
+		a (href="https://bitbucket.org/fantomfactory/fantom-windows-installer/") Windows installer
+		|  also includes SWT / GFX libraries for 64-bit platforms. 
+
+	p	Fantom is also available via the Chocolatey Windows package manager.
+	
+	== app.renderLinkBy("Chocolatey Fantom Package", "https://chocolatey.org/packages/fantom", "sizjars", null)
+
+
+
+	h3	Linux
+
+	p	Fantom RPMs for Linux are available at:
+
+	== app.renderLinkBy("Fantom RPM Packages", "http://software.opensuse.org/package/fantom", "Fernando Raya", null)
+	
+	p	Note the separate sub packages for documentation and source code. Packages include SWT / GFX libraries for 64-bit platforms. 
+
+	p	Installation instructions for CentOS, Fedora, & OpenSUSE may be found at:
+	
+	== app.renderLinkOn("RPM Installation Instructions", "http://software.opensuse.org/download.html?project=home%3Afraya&package=fantom", "OpenSUSE", null)
+
+	p	Linux packages assume you're working with 
+		a (href="http://fantom.org/doc/docLang/Env#PathEnv") PathEnv
+		| , 
+		a (href="http://eggbox.fantomfactory.org/pods/afFpm/") FPM
+		|  or similar. For example, to use <code>PathEnv</code> add the following to <code>.bashrc</code>:
+	
+	pre.indent |
+		export FAN_ENV=util::PathEnv
+		export FAN_ENV_PATH=/home/&lt;username&gt;/fantom
+	//
+
+
+
+	h3	MacOS
+	
+	p	If you have a Mac, Fantom may be installed via <a href="http://brew.sh/">HomeBrew</a>:
+	
+	pre.indent	$ brew install fantom
+
+	p	View, edit, and contribute to the 
+		a (href="https://github.com/Homebrew/homebrew-core/blob/master/Formula/fantom.rb") Fantom Brew Formula
+		| . 
+
+
+
+	h2	Fantom Libraries
+	
+	p	Libraries for Fantom may be downloaded from the following sites:
+	
+	== app.renderLinkOn("Eggbox Pod Repository", "http://eggbox.fantomfactory.org/", "Fantom-Factory", "")
+	
+	== app.renderLinkOn("Status302 Repository", "http://repo.status302.com/", "Status302", "")
+
+	p	Don't forget that the standard Fantom installation comes pre-bundled with many core libraries.

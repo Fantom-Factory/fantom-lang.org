@@ -1,0 +1,50 @@
+nav#topNavBar.navbar.fixed-top.navbar-expand-md.navbar-dark.bg-dark
+	div.container
+		a.nav-item.brand (rel="home" href="${pageUrl(IndexPage#)}")
+			span.fannyTheFantom.${Date.today.month == Month.dec ? "festive" : ""}
+			span.fantomText Fantom	
+
+		button#js-expandBtn.navbar-toggler (type="button" data-toggle="collapse" data-target="#navbarToggler")
+			span.navbar-toggler-icon
+	
+		div#navbarToggler.collapse.navbar-collapse
+			ul.navbar-nav.ml-auto.mt-4.mt-md-0
+				li.nav-item.d-md-none.d-lg-block;	a.nav-link.${active(IndexPage#)}		(href="${pageUrl(IndexPage#)}")		| Home
+				li.nav-item; 						a.nav-link.${active(DownloadPage#)} 	(href="${pageUrl(DownloadPage#)}")	| Download
+				li.nav-item;						a.nav-link.${active(IdePage#)}		 	(href="${pageUrl(IdePage#)}")		| IDEs
+				li.nav-item;						a.nav-link.${active(CommunityPage#)}	(href="${pageUrl(CommunityPage#)}")	| Community
+				li.nav-item;						a.nav-link.${active(PlatformsPage#)}	(href="${pageUrl(PlatformsPage#)}")	| Platforms
+				li.nav-item;						a.nav-link.${active(PortfolioPage#)}	(href="${pageUrl(PortfolioPage#)}")	| Portfolio
+				li.nav-item.d-md-none.d-lg-block;	a.nav-link.${active(BrandingPage#)}		(href="${pageUrl(BrandingPage#)}")	| Branding
+				li.nav-item
+					a.nav-link.search.d-none.d-md-inline-block (href="${pageUrl(AskFannyPage#)}" data-toggle="modal" data-target="#askFannySearchModal")
+						| <svg xmlns="http://www.w3.org/2000/svg" class="searchIcon" title="Ask Fanny!" viewBox="0 0 512 512"><path d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"/></svg>
+					a.nav-link.d-md-none (href="#" data-toggle="modal" data-target="#askFannySearchModal")	Search
+
+div#askFannySearchModal.modal.fade (tabindex="-1" role="dialog")
+	div.modal-dialog" (role="document")
+		div.modal-content
+		
+			/*div.modal-header
+				//h5.modal-title	Modal title
+			
+			div.modal-body
+				button.close (type="button" data-dismiss="modal")	&times;
+				div.text-center.text-muted.mb-3
+					i	Search the Fantom reference documentation
+
+				div.d-none.d-sm-block.float-left.mr-3
+					img (src="${assetUrl(`/png/fanny-reading.png`)}" alt="Fanny the Fantom reading a book")
+				
+				form.my-4.my-sm-6.float-sm-left (method="GET" action="${pageUrl(AskFannyPage#)}")
+					label (for="navQ")	Ask Fanny the Fantom about:
+					div.input-group
+						input#navQ.form-control (name="q" type="text" autocomplete="off" value="")
+						span.input-group-btn
+							input.btn.btn-outline-success (type="submit" value="Go!")
+
+	// who needs 100K of jquery + bs!
+	/* script |
+		document.getElementById("js-expandBtn").onclick = function() {
+			document.getElementById("navbarToggler").classList.toggle("show");
+		}

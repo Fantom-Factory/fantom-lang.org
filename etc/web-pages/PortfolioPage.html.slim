@@ -1,0 +1,135 @@
+-- portfolio := |Str title, Str img, Uri href, Str? credit, Str? desc, |Obj| body |
+	-- credit = credit == "me" ? "Steve Eynon" : credit?.trimToNull
+	div#${title.fromDisplayName.decapitalize}.row.portfolioItem.pb-5
+		div.col-12.col-sm-5.col-md-4.col-lg-3.col-xl-5
+			a.noIcon (href="${href}")
+				-- if (["F4 Fantom IDE", "Camembert"].contains(title))
+					img.rounded.img-fluid (src="${assetUrl(`/images-portfolio/`.plusName(img))}" alt="")
+				-- else
+					img.rounded.img-fluid (src="${assetUrl(`/images-portfolio/`.plusName(img))}" alt="" style="border: 1px solid #000;")
+		div.col-12.col-sm-7.col-md-8.col-lg-9.col-xl-7
+			p
+				a.lead (href="${href}") ${title}
+				-- if (credit?.trimToNull != null)
+					small.text-muted.credit.text-nowrap  by ${credit}
+			-- if (desc?.trimToNull != null)
+				p.tagLine;i.text-muted	${desc}
+			-- body(2)
+
+== app.renderLayout("Portfolio")
+
+	h1	Portfolio
+
+	p	Real world examples of Fantom usage.
+
+
+	div.row
+		div.col-12.col-xl-6
+	
+			h2	Commercial
+			hr
+			
+			-- portfolio("SkySpark", "skySpark.x400.png", `https://skyfoundry.com/`, "SkyFoundry", "Analytics Software for a World of Smart Devices")
+				p	Server side analytics software for the building automation and energy management industry. 
+				p	This award winning software is the driving force behind all core Fantom development.
+				p	Written in Fantom.
+		
+				//p	Award winning analytics software for the building automation and energy management industry. 
+				//p	SkySpark is one of the reasons Fantom was created, and continues to be the main driving force behind all core Fantom development.
+			
+			-- portfolio("FinStack", "finStack.x400.png", `http://www.j2inn.com/`, "J2 Innovations", "Next generation Building Automation System")
+				p	A BAS framework that is easy to configure, mobile ready, and cost effective. 
+				p	Written in Fantom.
+		
+			-- portfolio("InferStack", "inferStack.x300.png", `http://intellastar.com/`, "Infergence", "")
+				p	A platform to connect, control, analyze, and manage Buildings and Equipment for the Internet of Things. 
+				p	Written in Fantom.
+		
+			-- portfolio("StackHub", "stackHub.x400.png", `https://stackhub.org/`, "", "Package Management for the Haystack Community")
+				p	A repository and package manager for 
+					a (href="http://project-haystack.org/") Project Haystack
+					| ; the open source model for the Internet of Things (IoT).
+				p	Written in Fantom.
+			
+			-- portfolio("Project Builder Plus", "projectBuilderPlus.x400.png", `http://bassg.com/solutions/software/analytics/pbp-by-bassg.html`, "BASSG", "Project Haystack Integrated Development Environment")
+				p	Desktop application with Haystack &amp; SkySpark integration. Complete with templates, synchronization, &amp; time-series data push. 
+				p	Written in Fantom.
+		
+			-- portfolio("Sparko", "sparko.x400.png", `https://bassg.com/solutions/software/analytics/sparko.html`, "BASSG", "A CMMS Solution for SkySpark")
+				p	This ticketing system targeted at SkySpark is the easy way to organize, prioritize, &amp; manage your Sparks. 
+				p	Written in Fantom.
+		
+			-- portfolio("Trinkin", "trinkin.x400.png", `https://trinkin.com/`, "", "")
+				p	From up-to-date tap lists, to the latest specials, Trinkin helps you find that perfect spot, or that hard to find beer.
+				p	Written in Fantom.
+			
+			/* I have finally relinquished control of Bushmasters! 
+			/* -- portfolio("Bushmasters", "bushmasters.x400.png", `http://www.bushmasters.co.uk/`, "", "")
+				p	Bushmasters offers extreme adventure holidays around the world, focusing on Jungle Survival deep in the Amazon.
+				p	Mini CMS and backing website written in Fantom.
+
+
+		div.col-12.col-xl-6
+
+			h2	Public Domain
+			hr
+		
+			-- portfolio("Escape the Mainframe", "escape.x400.png", `http://escape.fantomfactory.org/`, "me", "A game featuring Fanny the Fantom!")
+				p	A simple jump and duck game to test your reflexes. Rendered in stunning retro 3D vector graphics. Think Tron meets Minecraft! 
+				p	Written entirely in Fantom; play in the browser or download the desktop app!
+		
+			-- portfolio("F4 Fantom IDE", "f4.x400.png", `https://www.xored.com/products/f4/`, "Xored Software, Inc.", "Eclipse based IDE for Fantom")
+				p	F4 is a fully featured, eclipse based, Integrated Development Environment (IDE) for Fantom.
+				p	Written in Fantom.
+		
+			-- portfolio("Eggbox Pod Repository", "eggbox.x400.png", `http://eggbox.fantomfactory.org/`, "me", "Fantom Pod Repository")
+				p	An open source web application that lets you upload and distribute your Fantom libraries.
+				p	Written in Fantom, using libraries on Eggbox!
+		
+			-- portfolio("Gundam Game", "gundam.x400.png", `http://gundam.fantomfactory.org/`, "me", "A Horizontally Scrolling Shoot'em'Up Game")
+				p	A foray into bullet hell!
+				p	Written in Fantom, the same code base runs in a browser (as pure Javascript) <i>and</i> as a JVM desktop application! 
+		
+			-- portfolio("Fantom-Factory", "fantomFactory.x400.png", `http://www.fantomfactory.org/`, "me", "Fantom Fan Site")
+				p	A collection of links to articles, games, and projects - all dedicated to Fantom. 
+				p	Written in Fantom.
+		
+			/*-- portfolio("Alien-Factory", "alienFactory.x400.png", `http://www.alienfactory.co.uk/`, "me", "Fantom Fan Site")
+				p	Articles and code examples for Fantom developers of all levels. 
+				p	Written in Fantom.
+		
+			-- portfolio("Camembert IDE", "camembert.x400.png", `http://www.status302.com/camembert#.V2LYWxZuEgQ`, "Thibaut Colar", "Lightweight Code Editor")
+				p	An open source, lightweight IDE for multiple languages.
+				p	Written in Fantom.
+		
+			-- portfolio("Fantex", "fantex.x400.png", `http://fantex.fantomfactory.org/`, "me", "Online Fantom Regular Expression Editor")
+				p	A handy utility to test regular expression groupings and see generated Fantom code.
+				p	Written in Fantom.
+			
+			-- portfolio("Explorer", "explorer.x400.png", `http://eggbox.fantomfactory.org/pods/afExplorer/doc/`, "me", "")
+				p	An open source desktop system file explorer, browser, and Fandoc API viewer / editor.
+				p	Written in Fantom.
+		
+			/*-- portfolio("BedNap", "bednap.x400.png", `http://bednap.fantomfactory.org/`, "me", "A Sample BedSheet Web App")
+				p	A template 
+					a (href="http://eggbox.fantomfactory.org/pods/afBedSheet/") BedSheet
+					|  application to kickstart your web app development.
+				p	Written in Fantom.
+
+
+	
+	h2	Popular Libraries
+	
+	ul.list-unstyled
+		li; == app.renderLinkBy("BedSheet",		"http://eggbox.fantomfactory.org/pods/afBedSheet/",		"me",				"A platform & IoC container for the routing and delivery of content over HTTP")
+		//li; == app.renderLinkBy("Bounce",		"http://eggbox.fantomfactory.org/pods/afBounce/",		"me",				"A headless browser for asserting web page content")
+		li; == app.renderLinkBy("BrainFuck",	"http://eggbox.fantomfactory.org/pods/brainfuck/",		"Fernando Raya",	"A BrainFuck interpreter written in Fantom")
+		li; == app.renderLinkBy("Fancordion",	"http://eggbox.fantomfactory.org/pods/afFancordion/",	"me",				"Automated acceptance testing; similar to Cucumber but focuses more on readability and presentation")
+		li; == app.renderLinkBy("Fantom Pod Manager", "http://eggbox.fantomfactory.org/pods/afFpm/",	"me",				"Provides a targeted environment for compiling, testing, and running Fantom applications")
+		li; == app.renderLinkBy("IoC",			"http://eggbox.fantomfactory.org/pods/afIoc/",			"me",				"A fast, lightweight, and highly customisable dependency injection framework")
+		li; == app.renderLinkBy("Json",			"http://eggbox.fantomfactory.org/pods/afJson/",			"me",				"A JSON to Fantom object mapping library")
+		li; == app.renderLinkBy("Mongo",		"http://eggbox.fantomfactory.org/pods/afMongo/",		"me",				"A pure Fantom driver and mapping library for MongoDB")
+		li; == app.renderLinkBy("Mustache",		"https://bitbucket.org/xored/mustache/",				"Xored Software, Inc.", "A logic-free template engine")
+		li; == app.renderLinkBy("Slim",			"http://eggbox.fantomfactory.org/pods/afSlim/",			"me",				"A concise and lightweight templating language for generating HTML")
+		li; == app.renderLinkBy("Studs",		"https://studs.io/",									"Andy Frank",		"A turn-key framework for working with embedded systems (Raspberry Pi, BeagleBone, etc...)")
+		

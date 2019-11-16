@@ -1,0 +1,5 @@
+
+main {
+	$topNavBar-height	: 3.375;	// a best guess as to what the TopNavBar height is ~ 54px / 16 = 3.375
+	padding-top			: $topNavBar-height + ($spacer * 2);
+}

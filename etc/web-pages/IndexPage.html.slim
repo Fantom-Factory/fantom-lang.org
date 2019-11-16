@@ -1,0 +1,88 @@
+== app.renderLayout("")
+
+	h1.mb-3.d-none.d-sm-block
+		div.title				 Fanto
+			span.noTrailingSpace | m
+		div.small.text-muted	 | ${tagLine}
+
+	style |
+		#indexPage h1 {
+			width:	${tagLine.size + 6}rem;
+		}
+
+	div.row
+		div.ml-auto.col-sm-4.col-md-5.col-lg-4.col-xl-3
+			div.d-none.d-sm-block
+				div#fanny (title="Fanny the Fantom")
+					== app.renderFanny
+				
+		div.col-sm-8.col-md-7
+			ul.h4.highlights	
+				li	Full Interop with Java
+				li	Compiles to Javascript
+				li	Concise &amp; Sane Core API
+				li	Concurrency via Actors
+				li	Easy Window
+					span.d-md-none s
+					span.d-none.d-md-inline ing
+					|  &amp; Gfx API
+				li	Powerful F4 IDE
+
+
+	div.row
+		div.ml-auto.col-12.col-lg-10
+		
+			h2	What is Fantom?
+			
+			p	Fantom is an elegant open source, object-oriented, software language that runs on the Java Virtual Machine (JVM).
+		
+			p	Designed to be portable, Fantom also compiles to Javascript, and even runs on the .NET Common Language Runtime (CLR)!
+			
+			p	Fantom is a C-like language complete with { curly braces }. Compare the syntax differences between <a href="http://www.alienfactory.co.uk/articles/syntax-showdown-fantom-vs-java">Fantom &amp; Java</a> and <a href="http://www.alienfactory.co.uk/articles/syntax-showdown-fantom-vs-csharp">Fantom &amp; C#</a>.
+			
+			p	With proven commercial success on servers, browsers, and embedded devices, Fantom is the perfect choice when considering the Internet of Things.
+
+
+
+			h2	Why Fantom?
+			
+			p	Concise core APIs, familiar syntax, and sensible libraries let you concentrate on the problem, not the language!
+		
+			p	It natively tackles all the hard stuff, like immutability and proper concurrency with Actors, so you don't have to!
+	
+			p	Fantom strikes a unique balance between static and dynamic typing, and much, much, more... 
+			
+			== app.renderLinkOn("Why Fantom", "http://fantom.org/doc/docIntro/WhyFantom", "fantom.org", "A perspective from the creators")
+		
+			== app.renderLinkOn("Fantom", "http://www.javamagazine.mozaicreader.com/SeptOct2016/Twitter#&pageSet=53&page=0&contentItem=0", "Java Magazine", "Runs on Java and JavaScript VMs and delivers excellent UI-building capabilities")
+		
+			== app.renderLinkOn("Fantom", "http://www.drdobbs.com/tools/fantom/229218754", "Dr Dobbs Journal", "Generate JavaScript, Java bytecode, and .NET binaries")
+		
+			== app.renderLinkOn("JVM Languages Report", "https://zeroturnaround.com/rebellabs/jvm-languages-report-extended-interview-with-fantom-creators-brian-and-andy-frank/", "zeroturnaround.com", "Extended interview with Brian & Andy Frank")
+
+			== app.renderLinkOn("Fantom: A Better Java", "https://jaxenter.com/fantom-pirates-jvm-134054.html", "JAX", "Part of the \"Pirates of the JVM\" series")
+	
+			p	It truly is the next generation programming language!
+		
+			p	The first video (Fantom is Fun) is a 5 minute lightning talk that gives an overview of the language. The second video (The Developer's Choice) compares Fantom to Java and shows why Fantom is a real viable alternative.
+			
+			div.youTubeVids.text-center
+				iframe#vid1 (width="400" height="300" src="#" frameborder="0" allowfullscreen)
+				span.d-none.d-xl-inline.px-1
+				iframe#vid2 (width="400" height="300" src="#" frameborder="0" allowfullscreen)
+
+			h2	Which website?
+
+			p	This <a href="${pageUrl(IndexPage#)}">${httpRequest.headers["X-Forwarded-Host"] ?: bedServer.host.host}</a> website exists to provide easy access to community resources about Fantom. It is easily browsable and aims to complement, not replace, other Fantom websites; such as:
+
+			p.h3;a (href="http://fantom.org/") fantom.org
+
+			p	The official Fantom website maintained by Fantom creators Brian and Andy Frank. Here you'll find user guides, language documentation, and the core Fantom libraries.
+
+			// p.h3;a (href="http://askfanny.fantomfactory.org/") Ask Fanny
+			// 
+			// p	A mini search engine for the Fantom reference documentation, featuring Fanny the Fantom!
+
+			p.h3;a (href="http://eggbox.fantomfactory.org/") Eggbox Pod Repository
+			
+			p	An extensive variety of 3rd party Fantom libraries complete with user guides and API documentation. 

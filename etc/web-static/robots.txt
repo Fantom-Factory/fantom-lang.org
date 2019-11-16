@@ -1,0 +1,17 @@
+# /robots.txt file for http://fantom-lang.org/
+
+Sitemap: http://fantom-lang.org/sitemap.xml
+
+# Allow RedBot - see http://blog.redbot.org/post/80961783116/redbot-and-robots-txt
+User-agent: RED.
+Disallow:
+
+# Disallow access to meaningless directories
+User-agent: *
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+
+# We'll keep images so RedBot and Google can access them, same goes for ColdFeet
+# Disallow: /images/
+# Disallow: /coldFeet/

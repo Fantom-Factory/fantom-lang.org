@@ -1,0 +1,35 @@
+
+# ==== FANTOM-LANG CONFIG =========================================================================
+
+# ---- General Values -----------------------------------------------------------------------------
+
+contactEmail						= gro.gnal-motnaf@evets
+
+emailEnabled						= false
+emailFrom							= 
+emailSendErrsTo						= 
+
+smtpHost							= 
+smtpPort							= 
+smtpUsername						= 
+smtpPassword						= 
+smtpSsl								= 
+
+afBedSheet.fileAsset.cacheControl	= max-age=86400		// 1 day
+
+afGoogleAnalytics.accountNumber 	= UA-33997125-7
+
+
+
+# ---- Development Values -------------------------------------------------------------------------
+
+
+
+# ---- Test Values --------------------------------------------------------------------------------
+
+
+
+
+# ---- Production Values --------------------------------------------------------------------------
+
+prod.afBedSheet.host				= http://fantom-lang.org/

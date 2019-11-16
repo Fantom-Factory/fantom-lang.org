@@ -1,0 +1,75 @@
+
+$brand-green			: #20EE23;
+$brand-black			: #131313;
+$brand-blue				: #001133;	//	#000033;
+//$brand-blue				: #435590;	// #554390
+//$brand-blue				: #6177A8;	//#435590;	// #554390
+//$brand-blue				: #3366FF;	// #554390
+$brand-silver			: #C9CED2;
+$brand-blue-light		: #0275d8;
+
+$brand-font				: "neuropolitical_rg";
+
+// this is created by scss mixin stuff - dunno how to override the variable, so we override the class instead.
+.bg-dark {
+	background-color		: $brand-blue !important;
+}
+
+@font-face {
+	font-family	: 'neuropolitical_rg';
+	src			: url('../../haTGRw/fonts/neuropolitical_rg.eot');
+	src			: url('../../haTGRw/fonts/neuropolitical_rg.eot?#iefix') format('embedded-opentype'),
+				  url('../../6v1KTA/fonts/neuropolitical_rg.woff2') format('woff2'),
+				  url('../../6xcREA/fonts/neuropolitical_rg.woff') format('woff'),
+				  url('../../W5j77g/fonts/neuropolitical_rg.ttf') format('truetype'),
+				  url('../../M_vHEg/fonts/neuropolitical_rg.svg#neuropolitical_rg') format('svg');
+	font-weight	: normal;
+	font-style	: normal;
+}
+
+@font-face {
+	font-family	: 'Open Sans';
+	font-style	: normal;
+	font-weight	: 400;
+	src			: local('Open Sans'),
+				  local('OpenSans'), 
+				  url(../../YBhK5A/fonts/openSans400.woff) format('woff');
+}
+
+main.container {
+	// by the power of Rems and Bootstrap 4, we shrink the screens!
+	// but keep the header / topNavBar the same
+	//font-size		: 14px;
+}
+
+body {
+	// always keep the scrollbar showing so the screen width doesn't change 
+	// when dislaying small pages
+	overflow-y		: scroll;
+}
+
+h2,  h3,  h4,  h5,  h6 {
+	margin-top		: 3 * $spacer;
+	margin-bottom	: $spacer;
+	font-family		: $brand-font;
+	font-weight		: normal !important;
+}
+
+.text-centre,
+.text-center {
+	text-align		: center !important;
+}
+
+.indent,
+.unstyled-list.indent {
+	padding-left	: 2rem;
+}
+
+.lead {
+	font-size		: 1.4rem;
+}
+
+h1, .futureFont {
+	font-family		: $brand-font;
+}
+

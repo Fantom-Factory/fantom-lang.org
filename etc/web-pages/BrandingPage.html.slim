@@ -1,0 +1,173 @@
+== app.renderLayout("Branding")
+
+	h1	Branding
+
+	p	Images and logos you may use to promote Fantom. 
+
+
+
+	h2	Fantom Mascots
+
+	p.lead	<b>Fanny Evolved</b>
+	p	 	A lovable Fanny with a cutsey character. Designed by <a href="https://www.fiverr.com/ajordaz">Anibal Ordaz</a>.
+	div.container
+		div.row
+			div.col-sm-3.col-lg-2
+				div (style="width: 6rem;")
+					== fannyEvolved
+			div.col-sm-9.col-lg-4
+				a (href="${assetUrl(`/images-branding/fanny-evolved.svg`)}")		fanny-evolved.svg
+				small.text-muted ()  (8 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fanny-evolved.x512.png`)}")	fanny-evolved.x512.png
+				small.text-muted ()  (28 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fanny-evolved.x128.png`)}")	fanny-evolved.x128.png
+				small.text-muted ()  (4 KB)
+			div.col-sm-3.col-lg-2
+				div (style="width: 6rem;")
+					== fannyEvolvedBw
+			div.col-sm-9.col-lg-4
+				a (href="${assetUrl(`/images-branding/fanny-evolved.bw.svg`)}")			fanny-evolved.bw.svg
+				small.text-muted ()  (3 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fanny-evolved.bw.x512.png`)}")	fanny-evolved.bw.x512.png
+				small.text-muted ()  (7 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fanny-evolved.bw.x128.png`)}")	fanny-evolved.bw.x128.png
+				small.text-muted ()  (2 KB)
+	
+	p.lead.mt-3	<b>Fanny Original</b>
+	p	A clean cut vector graphic of Fantom's original ghostie. Designed by <a href="http://www.andyfrank.com/blog/2011/01/sketching-logos">Andy Frank</a> himself!
+	div.container
+		div.row
+			div.col-sm-3
+				div (style="width: 6rem; height: 6rem;")
+					== fannyOriginal
+			div.col-sm-9
+				a (href="${assetUrl(`/images-branding/fanny-original.svg`)}")		fanny-original.svg
+				small.text-muted ()  (1 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fanny-original.x512.png`)}")	fanny-original.x512.png
+				small.text-muted ()  (16 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fanny-original.x128.png`)}")	fanny-original.x128.png
+				small.text-muted ()  (3.5 KB)
+
+	p	Note SVGs maybe resized to <i>any</i> size without loss of quality and the PNGs have transparent backgrounds. 
+
+
+
+	h2	Fantom Logos
+
+	p	Glowing Fantom logo with a solid blue background.
+	div.container
+		div.row
+			div.col-sm-3
+				img (src="data:image/png;base64,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" alt="Fantom Logo")
+			div.col-sm-9
+				a (href="${assetUrl(`/images-branding/fantom-blueGlow.x460.png`)}") fantom-blueGlow.x460.png
+				small.text-muted ()  (57 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fantom-blueGlow.x800.png`)}") fantom-blueGlow.x800.png
+				small.text-muted ()  (115 KB)
+
+	p.mt-1	Transparent Fantom logo with a glowing alpha channel.
+	div.container
+		div.row
+			div.col-sm-3
+				img (src="data:image/png;base64,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" alt="Fantom Logo")
+			div.col-sm-9
+				a (href="${assetUrl(`/images-branding/fantom-alphaGlow.x460.png`)}") fantom-alphaGlow.x460.png
+				small.text-muted ()  (86 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fantom-alphaGlow.x800.png`)}") fantom-alphaGlow.x800.png
+				small.text-muted ()  (183 KB)
+
+
+
+	h2	Typeface
+
+	p	The font used on this website for logos and headings is:
+	
+	== app.renderLinkBy("Neuropolitical Regular", "http://typodermicfonts.com/neuropolitical-science/", "Typodermic Fonts Inc.", "A wide, futuristic typeface.")
+	
+	p	Neuropolitical Regular comes with a free commercial licence for use in logos and brands. And only a small one off payment is required to embed it in web sites. See 
+		a (href="https://www.fontspring.com/fonts/typodermic/neuropolitical/neuropolitical-regular") FontSpring
+		|  for details.
+
+
+
+	h2	Colours
+
+	p	Branding colours used on this website:
+	
+	p
+		span (style="display: inline-block; background-color: #001133; color: #FFFFFF; padding: 0.5rem; border: 1px #000 solid;")						#001133
+		span (style="display: inline-block; background-color: #0275D8; color: #FFFFFF; padding: 0.5rem; border: 1px #000 solid; margin-left: 1rem;")	#0275D8
+		span (style="display: inline-block; background-color: #C9CED2; color: #000000; padding: 0.5rem; border: 1px #000 solid; margin-left: 1rem;")	#C9CED2
+		span (style="display: inline-block; background-color: #FFFFFF; color: #000000; padding: 0.5rem; border: 1px #000 solid; margin-left: 1rem;")	#FFFFFF
+
+
+
+	h2	More Fanny!
+
+	p.mt-1	Fanny - Reading a Book
+	div.container
+		div.row
+			div.col-sm-3
+				img (src="${fannyReading}" alt="Fanny - Reading a Book!")
+			div.col-sm-9
+				a (href="${assetUrl(`/images-branding/fanny-reading.svg`)}") fanny-reading.svg
+				small.text-muted ()  (108 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fanny-reading.x512.png`)}") fanny-reading.x512.png
+				small.text-muted ()  (78 KB)
+
+	p.mt-1	Fanny - Riding a Quadcopter!
+	div.container
+		div.row
+			div.col-sm-3
+				img (src="${fannyQuadcopter}" alt="Fanny - Riding a Quadcopter!")
+			div.col-sm-9
+				a (href="${assetUrl(`/images-branding/fanny-quadcopter.svg`)}") fanny-quadcopter.svg
+				small.text-muted ()  (128 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fanny-quadcopter.x1024.png`)}") fanny-quadcopter.x1024.png
+				small.text-muted ()  (236 KB)
+
+	p.mt-1	Fanny - <a href="http://www.alienfactory.co.uk/articles/fantom-faster-than-java-and-kotlin">Faster than Java! (and Kotlin)</a>
+	div.container
+		div.row
+			div.col-sm-3
+				img (src="${fannyFasterThanJava}" alt="Fantom - Faster than Java!!")
+			div.col-sm-9
+				a (href="${assetUrl(`/images-branding/fanny-fasterThanJava.svg`)}") fanny-fasterThanJava.svg
+				small.text-muted ()  (131 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fanny-fasterThanJava.x1280.png`)}") fanny-fasterThanJava.x1280.png
+				small.text-muted ()  (86 KB)
+
+	p.mt-1	Fanny - Winning!
+	div.container
+		div.row
+			div.col-sm-3
+				img (src="${fannyWinning}" alt="Fanny - Winning!")
+			div.col-sm-9
+				a (href="${assetUrl(`/images-branding/fanny-goldCup.svg`)}") fanny-goldCup.svg
+				small.text-muted ()  (60 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fanny-goldCup.x512.png`)}") fanny-goldCup.x512.png
+				small.text-muted ()  (50 KB)
+
+	p.mt-1	Festive Fanny - Merry Christmas!
+	div.container
+		div.row
+			div.col-sm-3
+				img (src="${fannyFestive}" alt="Festive Fanny - Merry Christmas!")
+			div.col-sm-9
+				a (href="${assetUrl(`/images-branding/fanny-festive.svg`)}") fanny-festive.svg
+				small.text-muted ()  (88 KB)
+				br
+				a (href="${assetUrl(`/images-branding/fanny-festive.x512.png`)}") fanny-festive.x512.png
+				small.text-muted ()  (20 KB)

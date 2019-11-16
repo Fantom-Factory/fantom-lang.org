@@ -1,0 +1,80 @@
+-? using afAskFanny::Section
+
+== app.renderLayout("Ask Fanny")
+
+	//h1	Ask Fanny
+
+	div.row.justify-content-md-center
+		div.col-12.col-md-9.col-lg-7.col-xl-6
+			div.text-center.text-muted
+				i	A mini search engine for the Fantom reference documentation
+
+			div.d-none.d-sm-block.float-left.m-3
+				img (src="${assetUrl(`/png/fanny-reading.png`)}" alt="Fanny the Fantom reading a book")
+			
+			form.my-4.my-sm-6.float-sm-left (method="GET" action="${pageUrl(AskFannyPage#)}")
+				label (for="q")	Ask Fanny the Fantom about:
+				div.input-group
+					input#q.form-control (name="q" type="text" autocomplete="off" value="${query}" autofocus)
+					span.input-group-btn
+						input.btn.btn-outline-success (type="submit" value="Go!")
+				
+				-- if (query.size > 0)
+					small.form-text
+						span.text-muted	${results.size} result${results.size != 1 ? "s" : ""} found for: 
+						| ${query.capitalize}
+				
+				-- if (didYouMean.size > 0)
+					small.form-text
+						span.text-muted	Did you mean  
+						-- didYouMean.each |did, i|
+							a (href="${pageUri(AskFannyPage#).plusQuery(["q":did])}")	${did.capitalize}
+							-- if (i+1 < didYouMean.size)
+								| , 
+						| ? 
+
+
+	-- if (results.size > 0)
+
+		-- pill := |Int size->Str|
+			-- clazz := size == 0 ? "badge-secondary" : "badge-success"
+			span.badge.badge-pill.${clazz}	${size}
+			-- return ""
+	
+		ul.nav.nav-tabs (role="tablist")
+			li.nav-item
+				a.nav-link.${cssActive(docs)}  (href="#docs"  data-toggle="tab" role="tab")	Documentation ${pill(docs.size)}
+			li.nav-item
+				a.nav-link.${cssActive(types)} (href="#types" data-toggle="tab" role="tab")	Types ${pill(types.size)}
+			li.nav-item
+				a.nav-link.${cssActive(slots)} (href="#slots" data-toggle="tab" role="tab")	Slots ${pill(slots.size)}
+	
+		-- renderResult := |Section section|
+			div.card.mt-3.mb-6
+				div.card-header.text-muted	${section.what.dis} &rarr; 
+					a (href="${section.webUrl}")	${section.webUrl}
+	
+				div.card-body		
+					-- mono := |Section s->Str| { s.what.isApi ? "monofont " : "" }
+					-- lev  := 0
+					-- section.parents.eachr |parent|
+						div.card-subtitle.${mono(parent)}ml-${lev}
+							a (href="${parent.webUrl}")	${parent.title}
+						-- lev += 2
+	
+					h4.card-title.${mono(section)}ml-${lev++}
+						a (href="${section.webUrl}")	${section.title}
+			
+					div.result
+						== section.contentAsHtml
+					
+					/*div.card-footer
+						a (href="${section.webUrl}")	${section.webUrl}
+				
+		div.tab-content
+			div#docs.tab-pane.fade.${cssShow(docs)} (role="tabpanel")
+				-- docs.each { renderResult(it) }
+			div#types.tab-pane.fade.${cssShow(types)} (role="tabpanel")
+				-- types.each { renderResult(it) }
+			div#slots.tab-pane.fade.${cssShow(slots)} (role="tabpanel")
+				-- slots.each { renderResult(it) }

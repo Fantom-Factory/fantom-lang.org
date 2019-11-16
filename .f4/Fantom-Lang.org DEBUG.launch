@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.xored.fanide.launching.FanLaunchConfigurationType">
+<booleanAttribute key="ATTR_PROJECTS_CUSTOM_SELECTION" value="false"/>
+<booleanAttribute key="enableBreakOnFirstLine" value="false"/>
+<booleanAttribute key="enableDbgpLogging" value="false"/>
+<stringAttribute key="fanMainClass" value="Main"/>
+<stringAttribute key="mainScript" value=""/>
+<stringAttribute key="nature" value="com.xored.fanide.core.nature"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/fantom-lang.org"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
+</listAttribute>
+<stringAttribute key="project" value="fantom-lang.org"/>
+<stringAttribute key="scriptArguments" value="8069"/>
+</launchConfiguration>

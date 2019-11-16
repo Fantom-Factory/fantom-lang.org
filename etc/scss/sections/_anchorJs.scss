@@ -1,0 +1,9 @@
+
+.anchorjs-link {
+	transition		: all .25s linear;
+	padding-left	: 0.875em !important;
+}
+
+*:hover > .anchorjs-link {
+	padding-left	: 0.375em !important;
+}

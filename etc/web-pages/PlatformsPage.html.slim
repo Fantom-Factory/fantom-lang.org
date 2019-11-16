@@ -1,0 +1,66 @@
+== app.renderLayout("Platforms")
+
+	h1	Platforms
+	
+	p	Technical platforms compatible with Fantom programs.
+
+
+
+	h2	Internet Browsers
+	
+	p	Fantom compiles to Javascript, but how do you run it?
+	
+	p	For a guide to creating web applications that serve up Fantom javascript code to a browser, see this article using <a href="http://eggbox.fantomfactory.org/pods/afBedSheet/">BedSheet</a> and <a href="http://eggbox.fantomfactory.org/pods/afDuvet/">Duvet</a>:
+
+	== app.renderLinkBy("Run Fantom Code In a Browser!", "http://www.fantomfactory.org/articles/run-fantom-code-in-a-browser", "me", null)
+
+
+
+	h2	Server Environments
+	
+	p	Run Fantom applications on a multitude of server environments:
+	
+	== app.renderLinkBy("Docker", "https://github.com/chunquedong/dockerFantom", "chunquedong", "Deploy Fantom with Docker")
+
+	== app.renderLinkBy("Heroku", "https://bitbucket.org/AlienFactory/heroku-buildpack-fantom", "me", "A buildpack for deploying Fantom applications on Heroku")
+
+	== app.renderLinkBy("Linode", "https://bitbucket.org/afrankvt/fantomlinodeguide", "Andy Frank", "A step-by-step guide on setting up Fantom services on a Linode Debian instance")
+
+	== app.renderLinkBy("OpenShift", "https://bitbucket.org/AlienFactory/openshift-fantom-quickstart", "me", "A DIY application for deploying Fantom applications to Red Hat's OpenShift platform")
+
+
+	
+	h2	Raspberry Pi
+	
+	p	Use Studs to create embedded boot images and interface to network protocols and IO ports!
+	
+	== app.renderLinkBy("Studs", "https://studs.io/", "Andy Frank", "Build reliable embedded software with Fantom")
+
+	p	Or to install Fantom yourself, see this article for tips:
+	
+	== app.renderLinkBy("How To: Install Fantom on a Raspberry Pi", "http://fantom.org/forum/topic/2513", "Michael T. Richter", null)
+	
+
+
+
+	h2	Android
+	
+	p	While Fantom does not officially support Android devices, this branch runs on Android 5.0.
+	
+	== app.renderLinkBy("Fantom", "https://bitbucket.org/chunquedong/fan-1.0/", "chunquedong", "Android 5.0 compatible branch")
+
+	p	For instructions on compiling the above branch, and for creating a cross platform desktop / mobile GUI framework, see 
+		a (href="https://bitbucket.org/chunquedong/fangfx") Fanvas
+		small.text-muted  by chunquedong
+
+	p	Lobby the <a href="http://fantom.org/forum/topic/2391">Andriod Demo</a> ticket the Fantom forum to get Android officially supported! 
+
+
+
+	h2 Other Fantom VMs
+	
+	p	Fantom ships with a Virtual Machine to run Fantom on the JVM and the CLR. See below for other Fantom VMs. 
+	
+	== app.renderLinkBy("FanRun (C++)", "https://github.com/chunquedong/fanrun", "chunquedong", null)
+
+	//== app.renderLinkBy("Python", "https://bitbucket.org/_tactics/fantom-pythonvm", "_tactics", "(last updated in 2012)")

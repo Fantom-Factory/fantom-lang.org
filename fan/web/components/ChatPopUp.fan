@@ -1,0 +1,3 @@
+
+const mixin ChatPopUp : FangComponent { } 
+ 

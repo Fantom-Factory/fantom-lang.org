@@ -1,0 +1,19 @@
+
+#portfolioPage {
+
+	@include media-breakpoint-down(xs) {
+		.portfolioItem img {
+			max-width	: 15rem;
+		}
+	}
+	
+	.portfolioItem {
+		.lead {
+			font-family	: $brand-font;
+			font-size	: 1.6rem;
+		}
+		.tagLine {
+			margin-top	: -1rem;
+		}
+	}
+}

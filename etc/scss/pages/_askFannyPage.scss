@@ -1,0 +1,29 @@
+
+#askFannyPage {
+
+	pre {
+		@include border-radius($border-radius);
+		background-color	: $gray-100;
+		border				: 1px solid rgba($black,.125);
+		padding				: .5rem;
+	}
+	
+	.card {
+		width				: 100%;
+	}
+	
+	.card-subtitle {
+		margin-bottom		: $spacer * 0.25;
+	}
+	
+	.monofont {
+		font-family			: $font-family-monospace;
+	}
+	
+	// revert globals
+	h2,  h3,  h4,  h5,  h6 {
+		margin-top		: 0;
+		margin-bottom	: 0.75rem;
+		font-family		: inherit;
+	}
+}

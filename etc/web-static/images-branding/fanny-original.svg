@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="110 110 320 380">					
+	<radialGradient id="fannySvg-bodyShading" cx="0.7" cy="0.25" r="0.5" spreadMethod="pad"><stop offset="0" stop-color="#fff"></stop><stop offset="1" stop-color="#ddd"></stop></radialGradient>
+	<path stroke="#555" stroke-width="3" fill="url(#fannySvg-bodyShading)" d="m 363.22945,124.5 c 15.4,2.7 31.5,4.4 44,14.9 16.3,13.6 18.2,35.8 17,55.7 -2.3,39.5 -12.6,74.9 -22.2,113 l -16.9,56 -6.6,20.4 c -4.1,4.1 -14.6,0.8 -19.4,-0.3 l -51,-10.9 c -13.9,-1.5 -22.6,15 -35,12.4 -16.5,-3.5 -34,-18.1 -49,-25.9 0,0 -8,-6.4 -17,-7.6 -23.7,-3.2 -62,3.5 -62,3.5 l -26.9,2.1 c -8.1,-2.6 5.7,-18.4 8,-21.8 l 42.7,-61 35.6,-48 c 38.8,-50.1 85.7,-115.3 158.7,-102.5 z"></path>
+	<path stroke="#333" stroke-width="2" fill="#3366ff" d="m 403.02945,221.1 -25.5,33.4 -19.2,-14.5 -35.1,9.6 -12,-69.6 53,45.5 z"></path>
+</svg>

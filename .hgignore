@@ -1,0 +1,8 @@
+syntax: glob
+.git
+bin
+build
+fancordion-results
+bugs
+
+syntax: regexp

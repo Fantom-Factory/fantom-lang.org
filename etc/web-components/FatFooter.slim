@@ -1,0 +1,31 @@
+
+footer#fatFooter.container
+	div.row
+		div.col-12
+			hr.mt-3.mb-0
+			
+			div.nav.justify-content-end
+				a.nav-link (href="${pageUrl(IndexPage#)}")		| Home
+				a.nav-link (href="${pageUrl(DownloadPage#)}")	| Download
+				a.nav-link (href="${pageUrl(IdePage#)}")		| IDEs
+				a.nav-link (href="${pageUrl(CommunityPage#)}")	| Community
+				a.nav-link (href="${pageUrl(PlatformsPage#)}")	| Platforms
+				a.nav-link (href="${pageUrl(PortfolioPage#)}")	| Portfolio
+				a.nav-link (href="${pageUrl(BrandingPage#)}")	| Branding
+				a.nav-link (href="${pageUrl(AskFannyPage#)}")	| Search
+			
+			hr.mt-0
+		
+			div.text-muted.mb-2
+				div.float-right.text-right
+					div.small	For comments, suggestions, or changes to this website
+					div.small	please contact  
+						a.js-contactUs (href="#" data-unscramble="${appConfig.contactEmail.reverse.toBuf.toBase64.reverse}") ${"".padl(appConfig.contactEmail.size, '-')}
+		
+				div.shieldsio
+					a (href="http://fantom.org/" title="Fantom :: The JVM Programming Language")
+						| <svg xmlns="http://www.w3.org/2000/svg" width="114" height="20"><linearGradient id="shield-b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"></stop><stop offset="1" stop-opacity=".1"></stop></linearGradient><mask id="shield-a"><rect width="114" height="20" rx="3" fill="#fff"></rect></mask><g mask="url(#shield-a)"><path fill="#555" d="M0 0h63v20H0z"></path><path fill="#9f9f9f" d="M63 0h51v20H63z"></path><path fill="url(#shield-b)" d="M0 0h114v20H0z"></path></g><g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11"><text x="31.5" y="15" fill="#010101" fill-opacity=".3">written in</text><text x="31.5" y="14">written in</text><text x="87.5" y="15" fill="#010101" fill-opacity=".3">Fantom</text><text x="87.5" y="14">Fantom</text></g></svg> 
+					a (href="http://eggbox.fantomfactory.org/pods/afBedSheet/" title="BedSheet :: Fantom Web Application Server")
+						| <svg height="20" width="142" xmlns="http://www.w3.org/2000/svg"><linearGradient y2="100%" x2="0" id="shield-d"><stop stop-opacity=".1" stop-color="#bbb" offset="0"></stop><stop stop-opacity=".1" offset="1"></stop></linearGradient><mask id="shield-c"><rect fill="#fff" rx="3" height="20" width="142"></rect></mask><g mask="url(#shield-c)"><path d="M0 0h77v20H0z" fill="#555"></path><path d="M77 0h65v20H77z" fill="#97CA00"></path><path d="M0 0h142v20H0z" fill="url(#shield-d)"></path></g><g font-size="11" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" text-anchor="middle" fill="#fff"><text fill-opacity=".3" fill="#010101" y="15" x="38.5">powered by</text><text y="14" x="38.5">powered by</text><text fill-opacity=".3" fill="#010101" y="15" x="108.5">BedSheet</text><text y="14" x="108.5">BedSheet</text></g></svg> 
+				div.small	© 2015-${currentYear} Steve Eynon
+				div.small	fantom-lang.org v${version}
