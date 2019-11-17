@@ -10,7 +10,7 @@ The main web pages are located in [etc/web-pages/](etc/web-pages/) as [Slim](htt
 
 ## Running the site locally
 
-To run fantom-lang.org locally, and assuming you already have [Fantom](https://fantom-lang.org/download) and [FPM](http://eggbox.fantomfactory.org/pods/afFpm/) installed, then simply run the following:
+To run fantom-lang.org locally, and assuming you have [Fantom](https://fantom-lang.org/download) and [FPM](http://eggbox.fantomfactory.org/pods/afFpm/) installed, then simply run the following:
 
     # navigate to the git repo
     $ cd <fantom-lang.org git repo>
