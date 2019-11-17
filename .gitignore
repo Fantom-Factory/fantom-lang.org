@@ -1,3 +1,5 @@
 build/
 .hg
+.hgignore
+.hgtags
 deploy-to-live.fish
