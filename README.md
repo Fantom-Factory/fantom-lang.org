@@ -1,5 +1,8 @@
 # fantom-lang.org
 
+[![Written in: Fantom](http://img.shields.io/badge/written%20in-Fantom-lightgray.svg)](http://fantom-lang.org/)
+[![Licence: ISC](http://img.shields.io/badge/licence-ISC-blue.svg)](https://choosealicense.com/licenses/isc/)
+
 This is the public repository for the [fantom-lang.org](https://fantom-lang.org/) website.
 
 To suggest documentation updates, simply fork and send a pull request.
