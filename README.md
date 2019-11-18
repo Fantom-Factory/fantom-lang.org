@@ -1,6 +1,6 @@
 # fantom-lang.org
 
-[![Written in: Fantom](http://img.shields.io/badge/written%20in-Fantom-lightgray.svg)](http://fantom-lang.org/)
+[![Written in: Fantom](http://img.shields.io/badge/written%20in-Fantom-lightgray.svg)](https://fantom-lang.org/)
 [![Licence: ISC](http://img.shields.io/badge/licence-ISC-blue.svg)](https://choosealicense.com/licenses/isc/)
 
 This is the public repository for the [fantom-lang.org](https://fantom-lang.org/) website.
@@ -25,6 +25,6 @@ To run fantom-lang.org locally, and assuming you have [Fantom](https://fantom-la
     $ fpm build
     
     # fire it up!
-    $ fpm run afFantomLang
+    $ fpm run afFantomLang 8069
 
 Then point your browser at `http://localhost:8069/`.
