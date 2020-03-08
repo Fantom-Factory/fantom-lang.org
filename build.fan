@@ -6,7 +6,7 @@ class Build : BuildPod {
 	new make() {
 		podName = "afFantomLang"
 		summary = "The Fantom-Lang Website"
-		version = Version("1.1.0.10")
+		version = Version("1.1.0.12")
 
 		meta = [
 			"pod.dis"		: "fantom-lang.org",
