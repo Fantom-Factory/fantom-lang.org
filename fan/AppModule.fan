@@ -21,8 +21,7 @@ const class AppModule {
 	
 	@Contribute { serviceType=ApplicationDefaults# }
 	Void contributeAppDefaults(Configuration config) {
-		// trying to remove these now gives me errors??
-//		config.remove("afSleepSafe.csp.report-uri")
-//		config.remove("afSleepSafe.cspReportFn")
+		config["afSleepSafe.csp.report-uri"]	= null
+		config["afSleepSafe.cspReportFn"]		= null
 	}
 }
