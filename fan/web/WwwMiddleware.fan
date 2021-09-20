@@ -7,7 +7,7 @@ using afBedSheet::HttpRequest
 using afBedSheet::Middleware
 using afBedSheet::MiddlewarePipeline
 using afBedSheet::ResponseProcessors
-using afBedSheet::Redirect
+using afBedSheet::HttpRedirect
 using afPillow::Pages
 
 const class WwwMiddleware : Middleware {
@@ -34,7 +34,7 @@ const class WwwMiddleware : Middleware {
 					? bedServer.toAbsoluteUrl(pages.get(AskFannyPage#).pageUrl).plusQuery(httpReq.url.query)
 					: bedServer.toAbsoluteUrl(pages.get(IndexPage#).pageUrl) + httpReq.url
 				
-				resPro.processResponse(Redirect.movedTemporarily(httpUrl))
+				resPro.processResponse(HttpRedirect.movedTemporarily(httpUrl))
 				return
 			}
 		}

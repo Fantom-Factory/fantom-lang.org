@@ -21,24 +21,24 @@ class Build : BuildPod {
 			"util       1.0.70 - 1.0",
 
 			// ---- Core ------------------------
-			"afBeanUtils  1.0.8  - 1.0",
-			"afConcurrent 1.0.20 - 1.0",
-			"afIoc        3.0.6  - 3.0",
-			"afIocConfig  1.1.0  - 1.1",
+			"afBeanUtils  1.0.12 - 1.0",
+			"afConcurrent 1.0.26 - 1.0",
+			"afIoc        3.0.8  - 3.0",
+			"afIocConfig  1.1.2  - 1.1",
 			"afIocEnv     1.1.0  - 1.1",
 
 			// ---- Web -------------------------
-			"afBedSheet   1.5.10 - 1.5",	// for SleepSafe
-			"afPillow     1.1.4  - 1.1",
-			"afEfanXtra   1.2.0  - 1.2",
+			"afBedSheet   1.5.16 - 1.5",	// for SleepSafe
+			"afPillow     1.2.2  - 1.2",
+			"afEfanXtra   2.0.6  - 2.0",
 			"afColdFeet   1.4.0  - 1.4",
-			"afDuvet      1.1.8  - 1.1",
-			"afSlim       1.2.0  - 1.2",
+			"afDuvet      1.1.12 - 1.1",
+			"afSlim       1.3.2  - 1.3",
 			"afSitemap    1.1.0  - 1.1",
-			"afGoogleAnalytics 0.1.4  - 0.1",
+			"afGoogleAnalytics 0.1.10  - 0.1",
 
 			"afAskFanny   0.0.4 - 0.0",
-			"afSleepSafe  1.0.0 - 1.0"
+			"afSleepSafe  1.0.6 - 1.0"
 		]
 
 		srcDirs = [`fan/`, `fan/web/`, `fan/web/components/`, `fan/web/pages/`]
