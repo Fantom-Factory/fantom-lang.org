@@ -18,42 +18,32 @@
 	
 
 
-	h2 Instant Messaging
-	
-	p	Can't wait for a forum reply? Then find us on instant messaging:
-	
-	== app.renderLinkOn("IRC WebChat", "http://webchat.freenode.net/?channels=#fantom", "freenode.net (no signup required)", "#fantom")
-	== app.renderLink  ("Slack", "https://fantom-lang.slack.com/", "email for invite", "#fantom-lang")
+	/*
+		h2 Instant Messaging
+		 
+		p	Can't wait for a forum reply? Then find us on instant messaging:
+		
+		== app.renderLinkOn("IRC WebChat", "http://webchat.freenode.net/?channels=#fantom", "freenode.net (no signup required)", "#fantom")
+		== app.renderLink  ("Slack", "https://fantom-lang.slack.com/", "email for invite", "#fantom-lang")
 
 
 
 	h2 Social Media
 	
-	p	Find us here:
-	
 	ul.list-unstyled
-		li;	== app.renderLink("StackOverflow",	"https://stackoverflow.com/questions/tagged/fantom"			, null, "Q & A")
+		//li;	== app.renderLink("StackOverflow",	"https://stackoverflow.com/questions/tagged/fantom"			, null, "Q & A")
 		li;	== app.renderLink("Facebook",		"https://www.facebook.com/fantomLang/"						, null, "Fantom Page")
-		li;	== app.renderLink("Twitter",		"https://twitter.com/hashtag/fantomlang?f=tweets"			, null, "#fantomLang")
+		li;	== app.renderLink("Twitter",		"https://twitter.com/hashtag/fantomLang?f=tweets"			, null, "#fantomLang")
 		li;	== app.renderLink("Reddit",			"https://www.reddit.com/r/Fantom/"							, null, "/r/Fantom")
 		li;	== app.renderLink("GitHub",			"https://github.com/topics/fantom"							, null, "fantom topic")
 
 
 
-	h2	Books
-	
-	p	If you have no programming experience, this collaborative online book on Penflip introduces basic concepts: 
-	
-	== app.renderLinkBy("Programming Fantom 1.0", "https://www.penflip.com/Hertz/programming-language-fantom-1-0/blob/master/1_Introduction.txt", "Hertz", "")
-
-	p	If you already have knowledge of a C like language, then try this excellent overview of Fantom:
-	
-	== app.renderLinkBy("A Short Introduction to Fantom", "https://github.com/tomcl/fantom-tutorial/raw/master/tutorial.pdf", "Thomas J. W. Clarke", "")
-
-
-
 	h2	Resources
 	
+	p	If you already have knowledge of a C like language, then try this excellent overview of Fantom:
+	== app.renderLinkBy("A Short Introduction to Fantom", "https://github.com/tomcl/fantom-tutorial/raw/master/tutorial.pdf", "Thomas J. W. Clarke", "")
+
 	p	Lists of public Fantom resources may be found here:
 	
 	== app.renderLinkOn("Fantom Resources", "https://github.com/Fantom-Factory/fantom-resources/blob/master/readme.md", "GitHub", "")
